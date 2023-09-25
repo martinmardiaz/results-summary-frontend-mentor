@@ -1,0 +1,233 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: lightgrey;
+    margin: 0;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.main-card {
+    border-radius: 5%;
+    background-color: white;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.first-col {
+    background-image: linear-gradient(220deg, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 100%);
+    border-radius: 0 0 8% 8%;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.first-col-content {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.first-col .result-title {
+    color: hsl(166, 100%, 37%);
+}
+
+.first-col .circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(180deg, hsla(256, 72%, 46%, 1) 0%, hsla(241, 72%, 46%, 0) 100%);
+    border-radius: 50%;
+    width: 145px;
+    height: 145px;
+    margin: 0 auto;
+}
+
+.first-col .circle .circle-result {
+    font-size: 58px;
+    font-weight: bold;
+}
+
+.first-col .circle .circle-total {
+    opacity: 0.50;
+}
+
+.first-col .result-compliment {
+    font-size: 28px;
+    margin-bottom: 0;
+}
+
+.first-col .result-info {
+    opacity: 0.60;
+    margin-top: 10px;
+}
+
+.second-col {
+    padding: 30px;
+}
+
+.second-col .summary {
+    opacity: 0.7;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.second-col .card, .second-col .card-first-col {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.second-col .card {
+    border-radius: 5px;
+    padding: 0 15px 0 15px;
+}
+
+.second-col .card-first-col {
+    gap: 0.75rem;
+}
+
+.second-col .card-second-col span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.second-col .card-second-col .result-total {
+    opacity: 0.50;
+}
+
+.second-col .card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#reaction {
+    background-color: hsla(0, 100%, 67%, 7%);
+}
+
+#reaction .card-first-col {
+    color: hsl(0, 100%, 67%);
+}
+
+#memory {
+    background-color: hsla(39, 100%, 56%, 7%);
+}
+
+#memory .card-first-col {
+    color: hsl(39, 100%, 56%);
+}
+
+#verbal {
+    background-color: hsla(166, 100%, 37%, 7%);
+}
+
+#verbal .card-first-col {
+    color: hsl(166, 100%, 37%);
+}
+
+#visual {
+    background-color: hsla(234, 85%, 45%, 7%);
+}
+
+#visual .card-first-col {
+    color: hsla(234, 85%, 45%);
+}
+
+.second-col .continue-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+    margin: 40px 0 20px 0;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border-radius: 35px;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.second-col .continue-button:hover {
+    background-image: linear-gradient(220deg, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 100%);
+}
+
+.attribution { 
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 768px) {
+    .main-card {
+        display: flex;
+        transform: translate(0%, 35%);
+        margin: 0 auto;
+        border-radius: 8%;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .first-col {
+        display: flex;
+        border-radius: 8%;
+        padding: 30px;
+        width: 95%;
+    }
+
+    .first-col .result-compliment {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .first-col .result-title, .second-col .summary  {
+        font-size: 24px;
+    }
+
+    .first-col .result-title {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .first-col .circle {
+        width: 205px;
+        height: 205px;
+        margin: 0 auto;
+    }
+
+    .first-col .circle .circle-result {
+        font-size: 72px;
+        line-height: 1.25;
+    }
+
+    .second-col {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .main-card {
+        width: 43.5%;
+    }
+}
